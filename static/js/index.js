@@ -22,7 +22,7 @@ function LED1_Off(){
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
-  client = new Paho.MQTT.Client("maqiatto.com", 1883, "Jomsk");
+  client = new Paho.MQTT.Client("maqiatto.com", 3883, "Jomsk");
 
   // set callback handlers
   client.onConnectionLost = onConnectionLost;

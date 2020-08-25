@@ -7,7 +7,7 @@ import base64
 from urllib.parse import unquote
 
 import os
-port = int(os.environ.get("PORT", 5000))	
+port = int(os.environ.get("PORT", 8000))	
 PORT_NUMBER = port
 
 app = Flask(__name__)

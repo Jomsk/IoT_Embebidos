@@ -22,7 +22,7 @@ function LED1_Off(){
 // Create a client instance
   //client = new Paho.MQTT.Client("postman.cloudmqtt.com", 14970);
   
-  client = new Paho.MQTT.Client("maqiatto.com", 8883, "web_" + parseInt(Math.random() * 100, 10));
+  client = new Paho.MQTT.Client("maqiatto.com", 1883, "web_" + parseInt(Math.random() * 100, 10));
 
   // set callback handlers
   client.onConnectionLost = onConnectionLost;
@@ -41,7 +41,7 @@ function LED1_Off(){
   // called when the client connects
   function onConnect() {
     // Once a connection has been made, make a subscription and send a message.
-    console.log("¡Conectado!");
+    console.log("Â¡Conectado!");
 	
     client.subscribe("jomsk@hotmail.com/IoT");
     message = new Paho.MQTT.Message("hola desde la web");
